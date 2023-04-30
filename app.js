@@ -309,3 +309,328 @@
 
 // Chp 15 Arrays
 
+// var cities = ["Karachi", "Quetta", "Lahore", "Islamabad"];
+
+// index number
+// alert("City = " + cities[3]);
+
+// var mixedArray = [1, true, "Bob", "", "", , , "Abc"];
+
+// console.log(mixedArray[1] = "abc");
+// console.log(mixedArray[10] = "Arsalan");
+// console.log(mixedArray)
+
+// =================================================================
+
+// Chp 16 Arrays: Adding and removing elements
+
+// var animals = [];
+
+// animals[0] = "dog";
+// animals[1] = "cat";
+// animals[2] = "lizard";
+
+// adding elements in the last of the array
+// animals.push("snake", "rabbit");
+// removing elements in the last of the array
+// animals.pop();
+
+// console.log(animals);
+
+
+// =================================================================
+
+// Chp 17 Arrays: Removing, inserting, and extracting elements
+
+// var names = ["arsalan", "sohail", "hassan", "mubeen", "owais"];
+
+// removeing one element from the beginning of an array
+// names.shift();
+// adding element from the beginning of an array
+// names.unshift("bob", "syde")
+// splice method is use to add one or more elements anywhere in an array
+// names.splice(1, 4, "bob", "syde", "kyth", "micheal")
+// Another Example
+// names.splice(2, 0, "abc");
+// copy the elements of an array
+// var newNames = names.slice(1, 5);
+
+// console.log(newNames)
+
+
+// =================================================================
+
+// Chp 18 for loops
+
+// var names = ["arsalan", "sohail", "hassan", "mubeen", "owais", "yaseen", "shayan"];
+// for (var i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+
+// =================================================================
+
+// Chp 19 for loops: Flags, Booleans, array length, and loopus interruptus
+
+// var names = ["arsalan", "sohail", "hassan", "mubeen", "owais", "yaseen", "shayan"];
+// var input = prompt("please enter your name", "arsalan");
+// var flag = false;
+
+// for (var i = 0; i < names.length; i++) {
+// console.log(names[i]);
+//     if (input === names[i]) {
+//         console.log("you must enter");
+//         flag = true;
+//         break;
+//     }
+// }
+
+// if (flag === false) {
+//     console.log("you must exit")
+// }
+
+// =================================================================
+
+// Chp 20 nested loops
+
+// var names = ["arsalan", "sohail", "hassan", "mubeen", "owais", "yaseen", "shayan"];
+// var namestoAdded = ['bob', "micheal", "syde"];
+
+// for (var i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+//     for (var j = 0; j < namestoAdded.length; j++) {
+//         console.log(namestoAdded[j]);
+//         console.log(names[i] + " " + namestoAdded[j]);
+//     }
+// }
+
+// =================================================================
+
+// Chp 21 changing case
+
+// var input = prompt("Enter any city name");
+// input = input.toLowerCase();
+// console.log(input);
+// console.log(input.toUpperCase());
+
+// =================================================================
+
+// Chp 22 Strings: Measuring length and extracting parts
+
+// var names = prompt("Enter your name");
+// var firstWord = names.slice(0, 1).toUpperCase();
+// var otherWords = names.slice(1).toLowerCase();
+
+// var result = firstWord + otherWords;
+
+// console.log(result);
+
+// var para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sed.";
+// var flag = false;
+// console.log(para.length);
+
+// for (var i = 0; i < para.length; i++) {
+// console.log(para[i]);
+// console.log(para[i])
+// console.log(i)
+// console.log(i, i + 2)
+//     if (para.slice(i, i + 2) === "  ") {
+//         alert("There is a double space!");
+//         flag = true;
+//         break;
+//     }
+// }
+
+// if (flag == false) {
+//     alert("No double spaces found!");
+// }
+
+// =================================================================
+
+// Chp 23 Strings: Finding segments
+
+// var str = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sit."
+
+// if found index number is in result and on no found return -1
+// var firstChr = str.indexOf("sit");
+// var lastChr = str.lastIndexOf("sit");
+
+// console.log(firstChr, lastChr)
+
+// var para = "Second World War, also called World War II, conflict that involved virtually every part of the world during the years 1939–45"
+
+// var firstChar = para.indexOf("World War II");
+// if (firstChar !== -1) {
+//     para = para.slice(0, firstChar) + "the second world war" + para.slice(firstChar + 12)
+// console.log(para.slice(firstChar + 12))
+// }
+
+// console.log(para)
+
+// =================================================================
+
+// Chp 24 Strings: Finding a character at a location.
+
+// var firstName = 'Arsalan';
+
+// Way 1
+// var firstChar = firstName.slice(0, 1);
+
+// Way 2
+// var firstChar = firstName.charAt(0);
+
+// console.log(firstChar)
+
+// var text = "Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium, sed!"
+
+// for (var i = 0; i < text.length; i++) {
+//     // console.log(text[i])
+//     console.log(text.charAt(i))
+//     if (text.charAt(i) === "!") {
+//         alert("Exclamation point found.");
+//         break;
+//     }
+// }
+
+// =================================================================
+
+// Chp 25 Strings: Replacing Characters.
+
+// var text = "Lorem ipsum dolor sit second world war amet consectetur adipisicing elit.Accusantium, sed!"
+
+// var firstChar = text.indexOf("second world war");
+
+// if (firstChar !== -1) {
+//     text = text.slice(0, firstChar) + "replace text" + text.slice(firstChar + 16);
+// }
+
+// Short Hand
+
+// text = text.replace("second world war", "world war ii");
+
+// console.log(text)
+
+// =================================================================
+
+// Chp 26 Rounding numbers
+
+// var result = 2.2;
+
+// result = Math.round(result);
+// result = Math.ceil(result);
+// result = Math.floor(result);
+
+// console.log(result)
+
+// =================================================================
+
+// Chp 27 Generating random numbers
+
+// var rNumber = Math.random();
+// var impovedNumber = (rNumber * 6) + 1;
+// var numberOfStars = Math.floor(impovedNumber);
+// console.log(numberOfStars);
+
+// =================================================================
+
+// Chp 28 Converting strings to integers and decimals
+
+// var currAge = prompt("Enter your age");
+// var cal = currAge - "18";
+// console.log(cal);
+
+// var currAge = +prompt("Enter your age");
+// var cal = currAge + 18;
+// console.log(cal);
+
+// ParseInt
+// var input = parseInt(prompt("Enter any number"));
+// console.log(typeof (input))
+
+// ParseFloat
+// var input = prompt("Enter age");
+// console.log(typeof (parseFloat(input)));
+
+// =================================================================
+
+// Chp 29 Converting strings to numbers, numbers to string
+
+// var integarString = "1218";
+// var num = Number(integarString);
+// console.log(typeof (num));
+
+// =================================================================
+
+// Chp 30 Controlling the length of decimals
+
+// var integarString = 1218;
+// integarString = integarString.toString();
+// console.log(typeof (integarString));
+
+// =================================================================
+
+// Chp 31 Getting the current date and time
+
+// var currDate = new Date();
+
+// var stringDate = currDate.toString();
+
+// stringDate = stringDate.slice(0, 15)
+
+// stringDate.getDay();
+
+// var daysArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// var theDay = currDate.getDay();
+
+// var day = daysArray[theDay];
+
+// console.log(day);
+
+// =================================================================
+
+// Chp 32 Extracting parts of the date and time
+
+// var date = new Date();
+
+// var day = date.getDay(); // 0 is Sunday
+
+// var currentMonth = date.getMonth(); // 0 is January
+
+// var currYr = date.getFullYear(); // 2023
+
+// var currentHrs = date.getHours(); // 0 is midnight 12 is noon 23 is 11pm
+
+// var currMins = date.getMinutes();
+
+// var currSecs = date.getSeconds();
+
+// var currMills = date.getMilliseconds();
+
+// console.log(day, currentMonth, currYr, currentHrs, currMins, currSecs, currMills)
+
+// var millsSince = date.getTime(); // miliseconds since midnight Jan, 1 1970
+
+// console.log(millsSince);
+
+// =================================================================
+
+// Chp 33 Specifying a date and time - Calculation of age
+
+var date = new Date();
+// console.log(date)
+
+var dateOfBirth = new Date("October 27, 2005");
+
+// console.log(dateOfBirth)
+
+var msDate = date.getTime();
+var msDateOfBirth = dateOfBirth.getTime();
+
+// console.log(msDate, msDateOfBirth)
+
+var diff = msDate - msDateOfBirth;
+
+var calculateAge = diff / (1000 * 60 * 60 * 24 * 365);
+
+// console.log("date", date.getTime());
+console.log(Math.floor(calculateAge))
